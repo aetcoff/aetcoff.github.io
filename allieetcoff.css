@@ -1,0 +1,144 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  /* Removes padding behaviour on widths */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+/* Attribute selector */
+/*[class*='col-'] {
+  float: left;
+  padding: 10px;
+}*/
+ 
+/* Floats last ".col-" to the right */
+/*[class*='col-']:last-of-type {
+  padding-right: 10px;
+  float: right;
+}*/
+ 
+/* Clearfix */
+.frame:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/**********************************
+GLOBAL  
+***********************************/
+
+body {
+
+
+}
+
+#container{
+  width: 970px;
+  margin: 0 auto;
+  border: 1px solid;
+ 
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*/* Main Widths */
+/*.col-1  {width: 100%;}
+.col-2 {width: 50%;}
+.col-3  {
+  width: 33.33%;
+*//*
+
+ 
+}
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  width: 950px;
+  height: 240px;
+ }
+
+#ae_logo {
+  margin: 0 auto;
+  display: block;
+  background: url('images/sprites.png') no-repeat 0px 0px;
+  height: 100px;
+  width: 100px;
+  text-indent: -9999px;
+}
+
+#name {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 3em;
+  letter-spacing: .15em;
+  display: block;
+  padding: 11px 0 0 284px;
+}
+
+#skills{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: .15em;
+  padding: 10px 0 0 360px;
+}
+
+/**********************************
+NAVIGATION
+***********************************/
+nav {
+  text-align: center;
+  font-family: 'Open-sans', sans-serif;
+  text-transform: uppercase;
+  margin: 4px 0 0 273px;
+  display: inline-block;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+nav li {
+  list-style: none;
+  float: left;
+  padding-right: 50px;
+  font-weight: 100;
+}
+
+nav li:first-of-type {
+  padding-left: 37px;
+}
+
+/**********************************
+BODY
+***********************************/
+
+.work_rows{
+  width: 100%;
+  padding: 40px 0 20px 0;
+
+}
+
+
+.portfolio {
+  height: 256px; 
+  display: inline-block;
+  width: 302px;
+  border: 1px solid;
+  margin-left: 13px;
+}
