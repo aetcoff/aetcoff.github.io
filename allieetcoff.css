@@ -1,144 +1,190 @@
-*,
-*:after,
-*:before {
+/*****************************/
+/********** General **********/
+/*****************************/
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* Removes padding behaviour on widths */
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  text-indent: 0;
 }
- 
-/* Attribute selector */
-/*[class*='col-'] {
-  float: left;
-  padding: 10px;
-}*/
- 
-/* Floats last ".col-" to the right */
-/*[class*='col-']:last-of-type {
-  padding-right: 10px;
-  float: right;
-}*/
- 
-/* Clearfix */
-.frame:after {
-  content: "";
+
+.cf:before, .cf:after {
   display: table;
+  content: ' '; 
+}
+
+.cf:after {
+  clear: both; 
+}
+
+.container {
+  margin-top: 50px;
+}
+
+header {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-width: 60%;
+  -moz-column-width: 60%;
+  column-width: 60%; }
+
+#name {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 100;
+  margin-top: .5em;
+  display: block; }
+
+#skills {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 100;
+  display: block;
+  margin: .3em 0 2em 0; 
+}
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+/*****************************/
+/************ Nav ************/
+/*****************************/
+
+#nav {
+  margin: 0 auto;
+  float: none;
+  text-align: center;
   clear: both;
 }
 
-
-/**********************************
-GLOBAL  
-***********************************/
-
-body {
-
-
-}
-
-#container{
-  width: 970px;
+#nav ul li {
+  display: inline;
   margin: 0 auto;
-  border: 1px solid;
- 
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-/*/* Main Widths */
-/*.col-1  {width: 100%;}
-.col-2 {width: 50%;}
-.col-3  {
-  width: 33.33%;
-*//*
-
- 
-}
-
-/**********************************
-HEADING
-***********************************/
-
-header {
-  width: 950px;
-  height: 240px;
- }
-
-#ae_logo {
-  margin: 0 auto;
-  display: block;
-  background: url('images/sprites.png') no-repeat 0px 0px;
-  height: 100px;
-  width: 100px;
-  text-indent: -9999px;
-}
-
-#name {
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  margin: 0 auto;
-  font-size: 3em;
-  letter-spacing: .15em;
-  display: block;
-  padding: 11px 0 0 284px;
-}
-
-#skills{
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  display: block;
-  letter-spacing: .15em;
-  padding: 10px 0 0 360px;
-}
-
-/**********************************
-NAVIGATION
-***********************************/
-nav {
   text-align: center;
-  font-family: 'Open-sans', sans-serif;
-  text-transform: uppercase;
-  margin: 4px 0 0 273px;
-  display: inline-block;
-  padding: 10px 0 10px 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
-nav li {
-  list-style: none;
+#nav a {
+  text-decoration: none;
+
+}
+
+#nav a:hover {
+  text-decoration: underline;
+}
+
+/*****************************/
+/********** Project **********/
+/*****************************/
+
+.project-name {
+  font-size: 1em;
+}
+
+.project-type {
+  font-style: italic;
+  display: block;
+}
+
+/*.content {
   float: left;
-  padding-right: 50px;
-  font-weight: 100;
+  margin: 0 20px 20px 0;
+}
+*/
+.project-item {
+  position: relative;
+  margin-bottom: 20px;
 }
 
-nav li:first-of-type {
-  padding-left: 37px;
+.project-description {
+  padding: 10px 0 10px 0;
+  float: left;
+  width: 300px;
+  border-top: 1px solid #898989;
+  border-bottom: 1px solid #898989;
+  margin: 0 25px 0 0;
+  height: 100%;
 }
 
-/**********************************
-BODY
-***********************************/
-
-.work_rows{
-  width: 100%;
-  padding: 40px 0 20px 0;
-
+.project-description-content {
+  padding-bottom: 10px;
 }
 
+/*****************************/
+/************ MFP ************/
+/*****************************/
 
-.portfolio {
-  height: 256px; 
-  display: inline-block;
-  width: 302px;
-  border: 1px solid;
-  margin-left: 13px;
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* This block of CSS adds opacity transition to background */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  opacity: 0 !important;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+
+/* aligns caption to center */
+.mfp-title {
+  text-align: center;
+  padding: 6px 0;
+}
+.image-source-link {
+  color: #DDD;
 }
