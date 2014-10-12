@@ -11,11 +11,11 @@
 
 .cf:before, .cf:after {
   display: table;
-  content: ' '; 
+  content: ' ';
 }
 
 .cf:after {
-  clear: both; 
+  clear: both;
 }
 
 .container {
@@ -46,7 +46,7 @@ header {
   letter-spacing: .15em;
   font-weight: 100;
   display: block;
-  margin: .3em 0 2em 0; 
+  margin: .3em 0 2em 0;
 }
 
 h1 {
@@ -63,8 +63,9 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 16px;
   letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 /*****************************/
@@ -116,18 +117,30 @@ h3 {
   margin-bottom: 20px;
 }
 
-.project-description {
-  padding: 10px 0 10px 0;
+.portfolio-text {
+ /* padding: 10px 0 10px 0;*/
   float: left;
   width: 300px;
   border-top: 1px solid #898989;
   border-bottom: 1px solid #898989;
-  margin: 0 25px 0 0;
+ /* margin: 0 25px 0 0;*/
   height: 100%;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 12px;
 }
 
-.project-description-content {
-  padding-bottom: 10px;
+.project-description-content{
+  margin: 0 0 7px 0;
+}
+/*****************************/
+/********** COLUMNS **********/
+/*****************************/
+.one-third column {
+  float: left;
+}
+
+.two-thirds column {
+  float: left;
 }
 
 /*****************************/
@@ -140,7 +153,9 @@ h3 {
   background: #FFF;
   padding: 20px;
   width: auto;
-  max-width: 900px;
+  max-width: 1000px;
+  max-height: 460px;
+  min-height: 460px;
   margin: 20px auto;
 }
 
@@ -149,9 +164,9 @@ h3 {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -162,7 +177,7 @@ h3 {
     opacity: 0.8;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
