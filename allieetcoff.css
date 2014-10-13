@@ -73,7 +73,7 @@ h3 {
 /*****************************/
 
 #nav {
-  margin: 0 auto;
+  margin: 10px auto;
   float: none;
   text-align: center;
   clear: both;
@@ -105,42 +105,31 @@ h3 {
 .project-type {
   font-style: italic;
   display: block;
+  padding-bottom: 20px;
 }
 
-/*.content {
-  float: left;
-  margin: 0 20px 20px 0;
-}
-*/
-.project-item {
-  position: relative;
-  margin-bottom: 20px;
+.project-image-thumb:hover {
+  opacity: .6;
 }
 
-.portfolio-text {
- /* padding: 10px 0 10px 0;*/
-  float: left;
+.project-content {
   width: 300px;
+  display: inline-block;
   border-top: 1px solid #898989;
   border-bottom: 1px solid #898989;
- /* margin: 0 25px 0 0;*/
   height: 100%;
   font-family: 'Open-Sans', sans-serif;
   font-size: 12px;
 }
 
-.project-description-content{
-  margin: 0 0 7px 0;
-}
-/*****************************/
-/********** COLUMNS **********/
-/*****************************/
-.one-third column {
-  float: left;
+.project-item {
+  margin-bottom: 8px;
 }
 
-.two-thirds column {
-  float: left;
+.project-image {
+  display: inline;
+  margin: 0 auto;
+
 }
 
 /*****************************/
@@ -154,8 +143,6 @@ h3 {
   padding: 20px;
   width: auto;
   max-width: 1000px;
-  max-height: 460px;
-  min-height: 460px;
   margin: 20px auto;
 }
 
