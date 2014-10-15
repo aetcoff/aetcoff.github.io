@@ -109,7 +109,7 @@ h3 {
 }
 
 .thumb-image:hover {
-  opacity: .6;
+  opacity: .7;
 }
 
 .project-content {
@@ -132,6 +132,26 @@ h3 {
   display: inline;
   max-width: 100%;
   float: left;
+}
+
+#fork {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+/*****************************/
+/*********** FOOTER **********/
+/*****************************/
+
+#footer {
+  width: 950px;
+  border-top: 1px solid #898989;
+  padding-top: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 10px;
 }
 
 /*****************************/
