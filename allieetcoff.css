@@ -159,6 +159,7 @@ h3 {
 /*****************************/
 .slick-slide {
   padding-top: 10px;
+  width: !important 600px;
 }
 button.slick-prev:before {
   color: #444;
@@ -170,6 +171,7 @@ button.slick-next:before {
 
 .slick-list.draggable {
   height: 460px;
+  width: 600px;
 }
 /*****************************/
 /************ MFP ************/
