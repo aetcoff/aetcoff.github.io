@@ -46,7 +46,7 @@ header {
   letter-spacing: .15em;
   font-weight: 100;
   display: block;
-  margin: .3em 0 2em 0;
+  margin: .3em 0 1em 0;
 }
 
 h1 {
@@ -149,7 +149,7 @@ h3 {
   width: 950px;
   border-top: 1px solid #444444;
   padding-top: 15px;
-  margin-top: 1123px;
+  margin-top: 1113px;
   margin-bottom: 50px;
   font-size: 10px;
 }
