@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
 	<link rel="stylesheet" href="allieetcoff.css">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans:400italic,400,600,300' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
@@ -36,7 +37,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 </head>
-<body>v
+<body>
 
 
 
@@ -158,7 +159,8 @@
 				<p class="project-item">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			</div>
 			<div class="two-thirds column feature project-image" >
-				<img src="images/full/desktop_bg_full_imac.jpg" />
+				<div><img src="images/full/desktop_bg_full.jpg" /></div>
+				<div><img src="images/full/desktop_bg_full_imac.jpg" /></div>
 			</div>
 		</div>
 <!-- COSMO INSTALL -->
@@ -173,10 +175,10 @@
 				<h3>About</h3>
 				<p class="project-item">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			</div>
-			<div class="two-thirds column feature project-image">
-				<img class="project-photo" src="images/full/cosmo/IMG_4026.jpg" />
-				<img class="project-photo" src="images/full/cosmo/IMG_3994.jpg" />
-				<img class="project-photo" src="images/full/cosmo/IMG_4004.jpg" />
+			<div class="two-thirds-column feature project-image">
+				<div><img class="project-photo" src="images/full/cosmo/IMG_4026.jpg" /></div>
+				<div><img class="project-photo" src="images/full/cosmo/IMG_3994.jpg" /></div>
+				<div><img class="project-photo" src="images/full/cosmo/IMG_4004.jpg" /></div>
 			</div>
 		</div>
 <!-- FB TIMELINE -->
@@ -192,8 +194,8 @@
 				<p class="project-item">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			</div>
 			<div class="two-thirds column feature project-image" >
-				<img src="images/full/fb_full.jpg" />
-				<img src="images/full/fb_full_imac.jpg" />
+				<div><img src="images/full/fb_full.jpg" /></div>
+				<div><img src="images/full/fb_full_imac.jpg" /></div>
 			</div>
 		</div>
 <!-- GP APP -->
@@ -209,9 +211,9 @@
 				<p class="project-item">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			</div>
 			<div class="two-thirds column feature project-image" >
-				<img src="images/full/gp_splash_full.jpg" />
-				<img src="images/full/gp_countdown_full.jpg" />
-				<img src="images/full/gp_sale_full.jpg" />
+				<div><img src="images/full/gp_splash_full.jpg" /></div>
+				<div><img src="images/full/gp_countdown_full.jpg" /></div>
+				<div><img src="images/full/gp_sale_full.jpg" /></div>
 			</div>
 		</div>
 <!-- O ADS -->
@@ -227,8 +229,8 @@
 				<p class="project-item">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			</div>
 			<div class="two-thirds column feature project-image" >
-				<img src="images/full/o_ad_1.jpg" />
-				<img src="images/full/o_ad_2.jpg" />
+				<div><img src="images/full/o_ad_1.jpg" height="460"/></div>
+				<div><img src="images/full/o_ad_2.jpg" height="460" /></div>
 			</div>
 		</div>
 <!--BIN ADS -->
@@ -284,8 +286,9 @@
 
 <!-- End Document
 ================================================== -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
 <script src="magnific-popup/jquery.magnific-popup.js"></script>
 <script src="allieetcoff.js"></script>
 </body>
