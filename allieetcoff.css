@@ -68,6 +68,10 @@ h3 {
   margin-bottom: 0;
 }
 
+.full-width {
+  margin: 0 auto;
+}
+
 /*****************************/
 /************ Nav ************/
 /*****************************/
@@ -83,6 +87,9 @@ h3 {
   display: inline;
   margin: 0 auto;
   text-align: center;
+  padding-right: 22px;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 #nav a {
