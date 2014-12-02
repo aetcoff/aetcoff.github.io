@@ -1,5 +1,5 @@
 /*****************************/
-/********** General **********/
+/********** GENERAL **********/
 /*****************************/
 
 * {
@@ -19,8 +19,37 @@
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 50px !important;
 }
+
+h1, h2 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+/*****************************/
+/********** COLUMNS **********/
+/*****************************/
+
+.one-third.column {
+  margin-right: 3px !important;
+}
+
+.two-thirds.column {
+  padding-left: 10px !important;
+}
+
+/************************/
+/******* HEADER *********/
+/************************/
 
 header {
   -webkit-column-count: 1;
@@ -38,6 +67,7 @@ header {
   font-weight: 100;
   display: block;
   top: -109px;
+  text-align: center;
   position: relative;
 }
 
@@ -49,8 +79,38 @@ header {
   font-weight: 100;
   display: block;
   top: -87px;
+  text-align: center;
   position: relative;
 }
+
+/* SVG ANIMATION */
+.svg-wrapper {
+  position: relative;
+  margin: 0 auto;
+  transform: translateY(0%);
+  width: 320px;
+  height: 130px;
+}
+.shape {
+  stroke-dasharray: 165 608;
+  stroke-dashoffset: -512;
+  stroke-width: 1px;
+  fill: transparent;
+  stroke: #333;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.svg-wrapper:hover .shape {
+  stroke-width: 1px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 200;
+}
+
+/* /SVG ANIMATION */
+
+/************************/
+/********CONTACT*********/
+/************************/
 
 .contact-header {
   font-family: 'Josefin-Sans', sans-serif;
@@ -68,7 +128,11 @@ header {
   display: inline-block;
 }
 
-.about-fae {
+/************************/
+/******** ABOUT *********/
+/************************/
+
+.about-face {
   display: inline-block;
 }
 
@@ -76,25 +140,14 @@ header {
   display: inline;
 }
 
-h1, h2 {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-}
 
 .full-width {
   margin: 0 auto;
 }
 
+
 /*****************************/
-/************ Nav ************/
+/************ NAV ************/
 /*****************************/
 
 #nav {
@@ -111,14 +164,12 @@ h3 {
   padding-right: 22px;
   font-weight: 500;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin-Sans', sans-serif;
   letter-spacing: .5px;
-
 }
 
 #nav a {
   text-decoration: none;
-
 }
 
 #nav a:hover {
@@ -126,7 +177,7 @@ h3 {
 }
 
 /*****************************/
-/********** Project **********/
+/********** PROJECT **********/
 /*****************************/
 
 .project-name {
@@ -176,23 +227,10 @@ h3 {
 /*********** FOOTER **********/
 /*****************************/
 
-#footer {
-  width: 950px;
-  border-top: 1px solid #444444;
-  padding-top: 15px;
-  margin-top: 1113px;
-  margin-bottom: 50px;
-  font-size: 10px;
-}
-* {
-  margin: 0;
-}
-html, body {
-  height: 100%;
-}
+/*for sticky footer*/
+
 .main-body {
   min-height: 100%;
-  /* equal to footer height */
   margin-bottom: -142px;
 }
 .main-body:after {
@@ -203,14 +241,15 @@ html, body {
   height: 142px;
 }
 .site-footer {
-  width: 950px;
+  width: 75%;
   border-top: 1px solid #444444;
   padding-top: 15px;
   margin: 0 auto;
   font-size: 10px;
 }
+
 /*****************************/
-/*********** SLICK ***********/
+/******* SLICK CAROUSEL ******/
 /*****************************/
 .slick-slide {
   padding-top: 10px;
@@ -229,10 +268,9 @@ button.slick-next:before {
   width: 600px;
 }
 /*****************************/
-/************ MFP ************/
+/********* MFP POPUP *********/
 /*****************************/
 
-/* text-based popup styling */
 .white-popup {
   position: relative;
   background: #FFF;
@@ -286,41 +324,4 @@ button.slick-next:before {
 }
 .image-source-link {
   color: #DDD;
-}
-
-/*TEST*/
-html, body {
-  background: #FFF;
-  text-align: center;
-  height: 100%;
-  overflow: hidden;
-}
-.svg-wrapper {
-  position: relative;
-  margin: 0 auto;
-  transform: translateY(0%);
-  width: 320px;
-  height: 130px;
-}
-.shape {
-  stroke-dasharray: 165 608;
-  stroke-dashoffset: -512;
-  stroke-width: 1px;
-  fill: transparent;
-  stroke: #6ee8ae;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-}
-/*.text {
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
-  line-height: 32px;
-  letter-spacing: 8px;
-  color: #333;
-  top: -48px;
-  position: relative;
-}*/
-.svg-wrapper:hover .shape {
-  stroke-width: 1px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 200;
 }

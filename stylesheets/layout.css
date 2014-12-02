@@ -36,7 +36,16 @@
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+	/*	.mobile-hidden {
+			display: none !important;
+		}*/
+
+		#fork {
+			display: none;
+		}
+	}
+
 
 
 /* #Font-Face
