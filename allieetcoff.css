@@ -113,20 +113,28 @@ header {
 /************************/
 
 .contact-header {
+  border-bottom: 1px dotted #333;
+  font-weight: 300;
+  font-size: 20px;
   font-family: 'Josefin-Sans', sans-serif;
-  font-size: 1.5em;
+  letter-spacing: .5px;
   text-transform: uppercase;
-  letter-spacing: .15em;
-  font-weight: 400;
-  display: block;
-  margin: .3em 0 1em 0;
+  padding: 20px 0 4px 0;
 }
 
 .contact-icons {
-  width: 15%;
+  width: 23%;
   display: inline-block;
 }
 
+
+.contact-info {
+  margin: 2% 0 0 0;
+}
+
+.contact-link {
+  text-decoration: none;
+}
 /************************/
 /******** ABOUT *********/
 /************************/
@@ -152,6 +160,7 @@ header {
   letter-spacing: .5px;
   text-transform: uppercase;
   padding: 20px 0 4px 0;
+  display: block;
 }
 
 .facts li {
@@ -253,11 +262,12 @@ header {
   height: 142px;
 }
 .site-footer {
-  width: 75%;
+  width: 15%;
   border-top: 1px solid #444444;
   padding-top: 15px;
   margin: 0 auto;
-  font-size: 10px;
+  font-size: 11px;
+  text-align: center;
 }
 
 /*****************************/
