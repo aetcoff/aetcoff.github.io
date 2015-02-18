@@ -30,7 +30,7 @@ h1, h2 {
 
 h3 {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 21px !important;
   letter-spacing: 1px;
   margin-bottom: 0;
 }
@@ -338,7 +338,7 @@ button.slick-next:before {
 }
 
 /* padding-bottom and top for image */
-.mfp-no-margins img.mfp-img {
+.mfp-no-margins thmfp-img {
   padding: 0;
 }
 /* position of shadow behind the image */
@@ -380,4 +380,3 @@ button.slick-next:before {
   width:2px;
 
 }
-
