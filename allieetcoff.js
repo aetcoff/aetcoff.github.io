@@ -12,7 +12,6 @@ $('.inline-popups').magnificPopup({
 
 	midClick: true
 });
-
 // FOR RETINA DISPLAY
 // $('.image-link').magnificPopup({
 //   type: 'image',
@@ -51,7 +50,6 @@ $('.project-image').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
         dots: true
       }
     },
@@ -59,15 +57,20 @@ $('.project-image').slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true
       }
     }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
 });

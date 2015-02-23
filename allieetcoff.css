@@ -380,3 +380,8 @@ button.slick-next:before {
   width:2px;
 
 }
+
+/*Slick*/
+.slick-dots {
+  display: none !important;
+}
